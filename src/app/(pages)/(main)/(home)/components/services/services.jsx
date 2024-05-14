@@ -10,7 +10,7 @@ const Services = () => {
                 product={true}
             />
             <ServiceCard
-                classNames={"flex flex-row-reverse"}
+                classNames={"flex lg:flex-row-reverse"}
                 product={false}
             />
         </div>

@@ -25,17 +25,17 @@ const businessData = [
 
 const ServiceCard = ({ paragraph, classNames, product }) => {
     return (
-        <div className={`container mx-auto py-20 h-auto flex items-center gap-14 ${classNames}`}>
-            <div className="flex flex-col gap-6 w-2/4">
+        <div className={`container mx-auto lg:py-20 py-10 h-auto flex lg:flex-row flex-col-reverse items-center gap-14 ${classNames}`}>
+            <div className="flex flex-col gap-6 lg:w-2/4">
 
                 {product ?
-                    <div className="text-5xl font-semibold flex flex-col gap-3">
+                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col gap-3">
                         <h2>Increase your product </h2>
                         <h2>sales with Selly AI</h2>
                     </div>
 
                     :
-                    <div className="text-5xl font-semibold flex flex-col gap-3">
+                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col gap-3">
                         <h2>Make business </h2>
                         <h2>processes better</h2>
                     </div>
@@ -55,7 +55,7 @@ const ServiceCard = ({ paragraph, classNames, product }) => {
                                 return (
                                     <div className="flex gap-8 "
                                         key={index}>
-                                            <div className={`${item.active === true ? "bg-black text-white w-10 h-10 rounded-full" : ""}`}>
+                                            <div className={`${item.active === true ? "bg-black text-white lg:w-10 w-14 h-10 rounded-full" : ""}`}>
                                             {item.icon}
                                             </div>
                                         <div className="flex flex-col gap-2">
@@ -69,7 +69,7 @@ const ServiceCard = ({ paragraph, classNames, product }) => {
                     </div>
                 }
             </div>
-            <div className="border border-black w-2/4 h-96">
+            <div className="border border-black lg:w-2/4 w-full h-96">
 
             </div>
         </div>

@@ -1,7 +1,7 @@
 "use client"
 import { Fragment } from "react";
 import Hero from "./components/hero/hero";
-import Business from "./components/business/business";
+import About from "./components/about/about"
 import Services from "./components/services/services"
 import Integration from "./components/integration/integration";
 import Faq from "./components/faq/faq";
@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <Fragment>
             <Hero />
-            <Business/>
+            <About/>
             <Services/>
             <Integration/>
             <Faq/>

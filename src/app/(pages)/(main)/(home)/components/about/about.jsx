@@ -1,5 +1,5 @@
 "use client"
-import BusinessCard from "./component/businessCard"
+import AboutCard from "./component/aboutCard"
 import IntegrationIcon from "../../../../../../assets/icons/integration.png"
 import DataIcon from "../../../../../../assets/icons/data.png"
 import SecurityIcon from "../../../../../../assets/icons/security.png"
@@ -29,15 +29,15 @@ const Data2 = [
         paragraph: "Use Selly AI's API to make your existing applications more powerful than before ",
     }
 ]
-const Business = ({ }) => {
+const About = ({ }) => {
     return (
         <div className="w-full h-auto bg-violet-50">
-            <div className="container mx-auto flex flex-col gap-6 py-20">
+            <div className="container mx-auto flex flex-col gap-6 lg:py-20 py-10">
                 <div className="flex flex-col items-center gap-4">
-                    <h2 className="text-5xl font-semibold">Make business grow quickly</h2>
-                    <p className="text-lg text-lightgray">Selly AI has many powerful features to make you work less and achieve more, try it now</p>
+                    <h2 className="lg:text-5xl text-3xl font-semibold">Make business grow quickly</h2>
+                    <p className="lg:text-lg text-lightgray">Selly AI has many powerful features to make you work less and achieve more, try it now</p>
                 </div>
-                <div className="grid grid-cols-3 gap-10 py-10">
+                <div className="grid lg:grid-cols-3 gap-10 lg:py-10 py-5">
                     {/* {Data.map((item, index) => {
                         return (
                             <BusinessCard
@@ -49,7 +49,7 @@ const Business = ({ }) => {
                     <div className="flex flex-col gap-10">
                         {Data.map((item, index) => {
                             return (
-                                <BusinessCard
+                                <AboutCard
                                     key={index}
                                     item={item}
                                 />
@@ -74,7 +74,7 @@ const Business = ({ }) => {
                     <div className="flex flex-col gap-10">
                         {Data2.map((item, index) => {
                             return (
-                                <BusinessCard
+                                <AboutCard
                                     key={index}
                                     item={item}
                                 />
@@ -86,4 +86,4 @@ const Business = ({ }) => {
         </div>
     );
 };
-export default Business;
+export default About;

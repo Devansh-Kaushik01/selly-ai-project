@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Logo from "../../../../../assets/logo/logo.png"
 import { useEffect, useState, Fragment } from "react";
 import DefaultButton from "../../../components/defaultButton/defaultButton"
+import { CgMenuRightAlt } from "react-icons/cg";
 
 const menuItems = [
     { name: "Solution", link: "/solution" },
@@ -49,13 +50,16 @@ const Header = ({ }) => {
                         })
                     }
                 </div>
-                <div className="flex gap-2">
+                <div className="hidden md:flex items-center gap-2">
                     <DefaultButton anchor onPress={"/"} classNames={"bg-white"} >
                         Sign In
                     </DefaultButton>
-                    <DefaultButton anchor onPress={"/"} classNames={"border-2 bg-white border-blue"} >
+                    <DefaultButton anchor onPress={"/"} classNames={"border-2 bg-white border-blue !h-12"} >
                         Get Started
                     </DefaultButton>
+                </div>
+                <div className='flex md:hidden bg-blue p-2 text-white rounded-xl '>
+                <CgMenuRightAlt size={20} />          
                 </div>
             </div>
         </Fragment>

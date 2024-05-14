@@ -1,8 +1,7 @@
 "use client"
 import Image from "next/image";
-import DefaultCheckbox from "../../../../../components/defaultCheckbox/defaultCheckbox"
 
-const BusinessCard = ({ item }) => {
+const AboutCard = ({ item }) => {
     return (
         <div className='bg-white p-10 rounded-3xl'>
                 <div className="w-full h-44 flex flex-col gap-2">
@@ -17,4 +16,4 @@ const BusinessCard = ({ item }) => {
         </div>
     );
 };
-export default BusinessCard;
+export default AboutCard;

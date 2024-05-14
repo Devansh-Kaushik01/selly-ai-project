@@ -11,7 +11,7 @@ const FaqCard = ({ item }) => {
 
     return (
         <>
-            <div className="bg-white p-6 rounded-3xl w-[700px]">
+            <div className="bg-white p-6 rounded-3xl lg:w-[700px]">
                 <div className="flex items-center justify-between">
                 <div className="text-lg font-medium">{item.heading}</div>
                  <IoIosArrowDown size={20}/>
