@@ -46,7 +46,7 @@ const ContactUs = () => {
                     service effectiveness.
                 </p>
             </div>
-            <div className="flex lg:gap-14 gap-5 lg:pt-0 pt-5">
+            <div className="flex lg:flex-row flex-col lg:gap-14 gap-8 lg:pt-0 pt-5">
                 <div className="flex flex-col gap-2">
                     <h4 className="mb-2 font-semibold">Product</h4>
                     {productsList.map((item, index) => {

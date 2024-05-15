@@ -33,9 +33,8 @@ const Hero = () => {
                     <p className="flex items-center font-medium gap-2">Introducing a new feature in Selly AI version 2.0 <GoArrowUpRight size={28} className="text-blue"/></p>
                 </div>
                 <h1 className="lg:text-6xl text-3xl font-semibold">Sell more with less using Selly AI</h1>
-                <p className="lg:text-lg text-md text-lightgray font-medium">Maximize your business sales potential with
-                    AI, which can make your way of working
-                    more efficient and more effective.
+                <p className="lg:text-lg text-md text-lightgray font-medium">Maximize your business sales potential with AI, which can make
+                your way of working more efficient and more effective.
                 </p>
                 <div className="flex gap-2">
                     <DefaultButton anchor onPress={"/"} classNames={" text-white w-40"} >
@@ -45,9 +44,9 @@ const Hero = () => {
                         <IoIosPlayCircle size={26} className="text-blue" /> Watch Product Tour
                     </DefaultButton>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 ">
                     <h4 className="text-md font-semibold text-lightgray">Trusted by leading brands</h4>
-                    <div className='flex gap-5 '>
+                    <div className='flex gap-2 '>
                         {imgaeData.map((item, index) => {
                             return (
                                 <Image

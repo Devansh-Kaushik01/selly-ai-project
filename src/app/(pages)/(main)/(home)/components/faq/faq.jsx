@@ -28,8 +28,7 @@ const Faq = () => {
                 <div className="flex flex-col gap-6 w-11/12">
                     <h2 className="lg:text-5xl text-3xl font-semibold">Frequently Asked Questions</h2>
                     <p className="lg:text-lg text-lightgray">See all your list of questions here. We will be
-                        very happy to help you.
-                    </p>
+                    very happy to help you. </p>
                     <DefaultButton anchor onPress={"/"} classNames={"text-white w-44"} >
                         Check more FAQ
                     </DefaultButton>

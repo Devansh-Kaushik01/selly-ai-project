@@ -50,7 +50,7 @@ const About = ({ }) => {
                         {Data.map((item, index) => {
                             return (
                                 <AboutCard
-                                    key={index}
+                                    key={"1" + index}
                                     item={item}
                                 />
                             )
@@ -75,7 +75,7 @@ const About = ({ }) => {
                         {Data2.map((item, index) => {
                             return (
                                 <AboutCard
-                                    key={index}
+                                    key={"2" + index}
                                     item={item}
                                 />
                             )

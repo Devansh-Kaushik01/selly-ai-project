@@ -29,19 +29,19 @@ const ServiceCard = ({ paragraph, classNames, product }) => {
             <div className="flex flex-col gap-6 lg:w-2/4">
 
                 {product ?
-                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col gap-3">
+                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col lg:gap-3 gap-1">
                         <h2>Increase your product </h2>
                         <h2>sales with Selly AI</h2>
                     </div>
 
                     :
-                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col gap-3">
+                    <div className="lg:text-5xl text-3xl font-semibold flex flex-col lg:gap-3 gap-1">
                         <h2>Make business </h2>
                         <h2>processes better</h2>
                     </div>
                 }
 
-                <p className="text-lg text-lightgray font-medium ">{paragraph}</p>
+                <p className="lg:text-lg text-md text-lightgray font-medium ">{paragraph}</p>
                 {product ?
                     <div className="flex flex-col justify-center gap-4 pt-5 font-medium">
                         <DefaultCheckBox label={'Best selling product track.'} />
@@ -55,7 +55,7 @@ const ServiceCard = ({ paragraph, classNames, product }) => {
                                 return (
                                     <div className="flex gap-8 "
                                         key={index}>
-                                            <div className={`${item.active === true ? "bg-black text-white lg:w-10 w-14 h-10 rounded-full" : ""}`}>
+                                            <div className={`${item.active === true ? "bg-black text-white lg:w-10 w-20 h-10 rounded-full" : ""}`}>
                                             {item.icon}
                                             </div>
                                         <div className="flex flex-col gap-2">
